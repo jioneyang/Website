@@ -6,7 +6,7 @@ var score;
 var highscore = 0;
 function setup() {
   createCanvas(600, 600);
-  snake = []
+  snake = [];
   snake[0] = new Snake();
   food = new Food();
   frameRate(10);
