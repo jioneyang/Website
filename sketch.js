@@ -1,15 +1,17 @@
-var snake = [];
-var prevSnake = [];
+var snake;
+var prevSnake;
 var food;
 var scl = 20;
 var score;
 var highscore = 0;
 function setup() {
   createCanvas(600, 600);
+  snake = []
   snake[0] = new Snake();
   food = new Food();
   frameRate(10);
   score = 0;
+  prevSnake = [];
   
 }
 
@@ -66,7 +68,7 @@ function gameOver() {
 
 function reset() {
   setup();
-  prevSnake = []
+  prevSnake = [];
 }
 
 function keyPressed() {
